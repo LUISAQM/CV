@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+div{
+    background-color: white;
+    border: 10px;
+    padding: 12px;
+    width: 80%;
+    margin: 0 auto;
+}
+fieldset{
+    margin-bottom: 12px;
+    size-adjust: auto;
+}
+legend.dat{
+    background-color: #fffd6e;
+    padding: 7px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+legend.exp{
+    background-color: #3dfd47;
+    padding: 7px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+legend.form{
+    background-color: #66f3f3;
+    padding: 7px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+html {
+    font-family: "calibri", Garamond, 'Comic Sans';
+    
+}
+p{
+    font-size: 25px;
+    text-align: justify;
+}
+.header {
+    background-color:#2480b9 ;
+    color: white;
+    padding: 10px;
+    text-align: center;   
+}
+body{
+    background-color: #e2e2e2;
+}
+.foto{
+    box-shadow: 2px 2px 5px #999;
+  margin-bottom: 1px;
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+.Regresar{
+  width: 20px;
+  height: 20px;
+  float: left;
+}
+span{
+    font-weight: bold;
+}
+.video-responsive {
+    overflow:hidden;
+    padding-bottom:400px; /* Adecua este valor para controlar la altura del video */
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+.menu ul {
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*Especifica qué sucede si el contenido
+  del cuadro de un elemento se desborda */
+}
+.menu li {   
+    list-style-type: none;
+    padding: 15px;
+    margin-bottom: 7px;
+    background-color: #2480b9;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);   
+}
+.menu li:hover {
+    background-color: white;   
+}
+
+.aside {
+    background-color: #2480b9;
+    padding: 15px;
+    color: #af3a88;
+    text-align: justify;
+    font-size: 0px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #2480b9;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
